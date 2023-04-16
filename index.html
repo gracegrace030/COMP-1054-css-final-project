@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/svg+xml" href="./source/favicon.svg">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Grace Kwong Portfolio</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.95"><path class="cls-1" d="M16.89,6.14h3.9a2,2,0,0,1,2,2v7.82a2,2,0,0,1-2,1.95H14.93l-1.42-2.12a1.81,1.81,0,0,0-3,0L9.07,17.86H3.21a2,2,0,0,1-2-1.95V8.09a2,2,0,0,1,2-1.95H16.89Z"/><circle class="cls-1" cx="6.14" cy="12" r="1.95"/><circle class="cls-1" cx="17.86" cy="12" r="1.95"/></svg>
+            </a>
+            <a href="#about_me">ABOUT ME</a>
+            <a href="#features">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </nav>
+
+    <header id="about_me">
+
+        <div class="hero">
+            <h2>Hello there! I'm</h2>
+            <h1 class="text_pattern">Grace<br>Kwong</h1>
+            <p>I enjoy doing creative things like UX/UI design, web deign, drawing, etc.</p>
+            <a class="btn" href="#contact">GET IN TOUCH</a>
+        </div>
+
+    </header>
+    <section class="main skills">
+        <section>
+            <h2>Skill Set</h2>
+            <ul>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>ASP.NET</li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="features" class="main feature">
+
+        <section class="dark feature_pj feature_pj_1 collapse">
+            <div class="project_title">JAVA</div>
+            <div class="content hidden downward">
+                <h2>MOOD PIXELS</h2>
+                <p>Language: Java</p>
+                <p>Mood Pixels ia a desktop application made by Using JavaFX. It is a mood tracker to recorded your daily mood.</p>
+            </div>
+            <div class="pj_image hidden downward">
+                <img src="./image/pjthumb_java.png" alt="mood pixels project image">
+            </div>
+        </section>
+
+        <section class="feature_pj feature_pj_2 collapse">
+            <div class="project_title">PYTHON</div>
+            <div class="content hidden downward">
+                <h2>EXCEL DUPLICATE DATA DELETER</h2>
+                <p>Language: Python</p>
+                <p>This application will retrieve data from multiple Excel files, process the data, remove duplication, and highlight differences. And then save them into a new Excel file.</p>
+            </div>
+            <div class="pj_image hidden downward">
+                <img src="./image/pjthumb_python.png" alt="python excel project image">
+            </div>
+        </section>
+
+        <section class="primary feature_pj feature_pj_3 collapse">
+            <div class="project_title">PHP</div>
+            <div class="content hidden downward">
+                <h2>Pokedex</h2>
+                <p>Language: PHP</p>
+                <p>Pokedex is a website for CRUD pokemons.</p>
+            </div>
+            <div class="pj_image hidden downward">
+                <img src="./image/pjthumb_php.png" alt="">
+            </div>
+        </section>
+        
+        <section class="feature_pj feature_pj_4 collapse">
+            <div class="project_title">CSS</div>
+            <div class="content hidden downward">
+                <h2>A LITTLE ABOUT ME</h2>
+                <p>Language: HTML, CSS</p>
+                <p>A biography website. Some of my favourite things.</p>
+            </div>
+            <div class="pj_image hidden downward">
+                <img src="./image/pjthumb_css.png" alt="">
+            </div>
+        </section>
+    </section>
+    <section class="reference">
+        <h5>References</h5>
+        <ul>
+            <li><a target="_blank" href="https://www.freepik.com/free-vector/black-white-wavy-lines-abstract-art_31594058.htm#query=illusion&position=18&from_view=search&track=sph">Image by kjpargeter</a> on Freepik</li>
+            <li><a target="_blank" href="https://www.svgrepo.com/svg/455086/glasses-virtual-reality">SVGrepo</a></li>
+        </ul>
+    </section>
+
+    <footer id="contact">
+        <h5>Get In Touch</h5>
+        <section>
+            <p><a href="mailto: grace@emailAddress.com?subject=Hello%20Grace">grace@emailAddress.com</a></p>
+            <span>&ensp;|&ensp;</span>
+            <p><a href="tel:+1-000-000-0000">+1-000-000-0000</a></p>
+        </section>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $(".feature_pj").on("click", function () {
+            $(this).find(".project_title").toggleClass("hidden");
+            $(this).find(".content").toggleClass("hidden");
+            $(this).find(".content").toggleClass("downward");
+            $(this).find(".pj_image").toggleClass("hidden");
+            $(this).find(".pj_image").toggleClass("downward");
+            $(this).toggleClass("expand");
+        });
+    });
+
+</script>
+
+</html>
