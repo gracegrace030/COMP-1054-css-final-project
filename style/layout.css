@@ -32,7 +32,8 @@ footer{
 }
 
 footer > *{
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
+    flex: 1;
 }
 
 footer > section:first-child{
